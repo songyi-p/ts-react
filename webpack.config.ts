@@ -9,7 +9,7 @@ interface Configuration extends WebpackConfiguration {
 }
 
 const config: Configuration = {
-  name: 'word-relay-dev',
+  name: 'ts-react game',
   mode: "development", // 배포용 : production
   devtool: "eval", // hidden-source-map
   resolve: {
@@ -42,11 +42,13 @@ const config: Configuration = {
   output: {
     filename: "[name].js",
     path: path.join(__dirname, "dist"),
+    publicPath: '/dist',
   },
 
   devServer: {
     devMiddleware: { publicPath: '/dist' },
     static: { directory: path.resolve(__dirname) },
+    port: 3000,
     hot: true
   }
 };
