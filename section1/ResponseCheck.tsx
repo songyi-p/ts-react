@@ -33,6 +33,7 @@ const ResponseCheck = () => {
             });
         }
     };
+
     const onReset = () => {
         setResult([]);
     };

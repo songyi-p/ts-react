@@ -1,5 +1,5 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import NumberBaseball from './section1/NumberBaseball'
+import ResponseCheck from './section1/ResponseCheck'
 
-ReactDOM.render(<NumberBaseball />, document.querySelector('#root'));
+ReactDOM.render(<ResponseCheck />, document.querySelector('#root'));
